@@ -5,9 +5,11 @@ import { OrderModule } from './order/order.module';
 import { UserModule } from './user/user.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { PostModule } from './post/post.module';
+import { ModelsModule } from './models/models.module';
+import { PromptsModule } from './prompts/prompts.module';
 
 @Module({
-  imports: [OrderModule, UserModule, PrismaModule, PostModule],
+  imports: [OrderModule, UserModule, PrismaModule, PostModule, ModelsModule, PromptsModule],
   controllers: [AppController],
   providers: [AppService],
 })
